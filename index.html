@@ -74,7 +74,22 @@
             </form>
         </div>
     </div>
-
+   <div id="newPostModal" class="newPostBox">
+        <div class="newPost-Content">
+            <span onclick="onCloseNewPost()" class="close_newPost">&times;</span>
+            <h1 id="formHeader">Create Your Post</h1>
+            <form id="newPostForm" action="/action_page.php">
+                <label for="newPostTitle">Title: </label>
+                <br />
+                <input id="newPostTitle" type="text" name="Title" class="post-title">
+                <br />
+                <br/>
+                <label for="postContent">Content: </label>
+                <textarea id="postContent" rows="27" cols="20" name="Content"></textarea>
+                <input id="newPostSubmit" type="submit" value="Create" align="right">
+            </form>
+        </div>
+    </div>
     <script src=".\js\index.js"></script>
     <script src=".\js\header.js">              
     </script>
