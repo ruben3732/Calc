@@ -49,6 +49,32 @@
         </form>
     </div>
 
+     <div id="signUpModal" class="modal">
+        <div class="modal-content-sigup">
+            <span onclick="onCloseModalClicked()" class="close_signIn" title="Close Modal">&times;</span>
+            <form class="modal-content-sigUp" action="/action_page.php">
+                <div class="container-signUp">
+
+                    <h1>Get Started</h1>
+                    <hr>
+                    <label for="Fullname" class="label">Full Name</label>
+                    <input type="text" placeholder="Enter Full Name" name="Fullname" required>
+                    <label for="Username" class="label">Username</label>
+                    <input type="text" placeholder="Enter Username" name="Username" required>
+                    <label for="psw" class="label">Password</label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    <label for="pswrepeat" class="label">Confirm Password</label>
+                    <input type="password" placeholder="Confirm Password" name="pswrepeat" required>
+                    <div class="clearfix">
+                            <button type="submit" class="signupbtn">Sign Up</button>
+                        <button type="button" class="cancelbtn">Clear</button>
+                        
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
     <script src=".\js\index.js"></script>
     <script src=".\js\header.js">              
     </script>
